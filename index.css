@@ -12,6 +12,7 @@ body {
     padding-right: clamp(146px, 39vw, 560px);
     background-color: #D5E1EF;
     color: #68778D;
+    line-height: 140%px;
 }
 
 body, p {
@@ -27,6 +28,7 @@ h1 {
     font-size: 1.375rem;
     margin: 24px 0 16px 0;
     color: #1F314F;
+    line-height: 120%;
 }
 
 img {
