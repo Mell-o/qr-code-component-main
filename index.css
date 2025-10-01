@@ -11,10 +11,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: clamp(3.75rem, 16vw, 14.406rem);
-    padding-bottom: clamp(3.75rem, 16vw, 14.406rem);
-    padding-left: clamp(9.125rem, 39vw, 35rem);
-    padding-right: clamp(9.125rem, 39vw, 35rem);
+    padding-block-start: clamp(3.75rem, 16vw, 14.406rem);
+    padding-block-end: clamp(3.75rem, 16vw, 14.406rem);
+    padding-inline-start: clamp(9.125rem, 39vw, 35rem);
+    padding-inline-end: clamp(9.125rem, 39vw, 35rem);
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
     line-height: 140%;
