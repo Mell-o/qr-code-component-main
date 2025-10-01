@@ -10,7 +10,8 @@ body {
     padding-bottom: clamp(60px, 16vw, 230.5px);
     padding-left: clamp(146px, 39vw, 560px);
     padding-right: clamp(146px, 39vw, 560px);
-    background-color: hsl(212, 45%, 89%);
+    background-color: #D5E1EF;
+    color: #68778D;
 }
 
 body, p {
@@ -25,6 +26,7 @@ h1 {
     font-weight: 700;
     font-size: 22px;
     margin: 24px 0 16px 0;
+    color: #1F314F;
 }
 
 img {
