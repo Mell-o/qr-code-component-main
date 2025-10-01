@@ -1,5 +1,6 @@
 :root {
-    --background-color: #D5E1EF;
+    --main-bg-color: #D5E1EF;
+    --main-font-color: #68778D;
 }
 
 body {
@@ -14,8 +15,8 @@ body {
     padding-bottom: clamp(3.75rem, 16vw, 14.406rem);
     padding-left: clamp(9.125rem, 39vw, 35rem);
     padding-right: clamp(9.125rem, 39vw, 35rem);
-    background-color: var(--background-color);
-    color: #68778D;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
     line-height: 140%;
     letter-spacing: 0.2px;
 }
