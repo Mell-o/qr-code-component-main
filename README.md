@@ -23,7 +23,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Solution URL](https://mell-o.github.io/qr-code-component-main/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/qr-code-component-HPEipgNyxb)
 - Live Site URL: [Live site URL](https://mell-o.github.io/qr-code-component-main/)
 
 ## My process
