@@ -34,6 +34,7 @@ img {
 }
 
 .qr-code-container {
+    padding: 16px 16px 40px 16px;
     border-radius: 20px;
     width: 320px;
     height: 499px;
