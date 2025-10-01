@@ -1,3 +1,7 @@
+:root {
+    --background-color: #D5E1EF;
+}
+
 body {
     font-size: 0.9375rem;
     font-family: "Outfit", sans-serif;
@@ -6,13 +10,13 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: clamp(60px, 16vw, 230.5px);
-    padding-bottom: clamp(60px, 16vw, 230.5px);
-    padding-left: clamp(146px, 39vw, 560px);
-    padding-right: clamp(146px, 39vw, 560px);
-    background-color: #D5E1EF;
+    padding-top: clamp(3.75rem, 16vw, 14.406rem);
+    padding-bottom: clamp(3.75rem, 16vw, 14.406rem);
+    padding-left: clamp(9.125rem, 39vw, 35rem);
+    padding-right: clamp(9.125rem, 39vw, 35rem);
+    background-color: var(--background-color);
     color: #68778D;
-    line-height: 140%px;
+    line-height: 140%;
     letter-spacing: 0.2px;
 }
 
