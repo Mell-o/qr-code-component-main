@@ -6,22 +6,38 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 230.5px 560px;
-    margin: 0 0;
+    padding-top: clamp(60px, 16vw, 230.5px);
+    padding-bottom: clamp(60px, 16vw, 230.5px);
+    padding-left: clamp(146px, 39vw, 560px);
+    padding-right: clamp(146px, 39vw, 560px);
     background-color: hsl(212, 45%, 89%);
 }
 
+body, p {
+    margin: 0;
+}
+
+h1, p {
+    padding: 0 16px;
+}
 
 h1 {
     font-weight: 700;
+    font-size: 22px;
+    margin: 24px 0 16px 0;
 }
 
 img {
-    width: 300px;
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
 }
 
 .qr-code-container {
-    padding: 16px 16px;
-    width: 300px;
+    border-radius: 20px;
+    width: 320px;
+    height: 499px;
     background-color: white;
+    text-align: center;
+    box-sizing: border-box;
 }
