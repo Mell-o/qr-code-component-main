@@ -47,4 +47,9 @@ img {
     background-color: white;
     text-align: center;
     box-sizing: border-box;
+    margin: 0 0 12px;
+}
+
+.attribution {
+    text-align: center;
 }
