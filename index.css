@@ -13,6 +13,7 @@ body {
     background-color: #D5E1EF;
     color: #68778D;
     line-height: 140%px;
+    letter-spacing: 0.2px;
 }
 
 body, p {
@@ -29,6 +30,7 @@ h1 {
     margin: 24px 0 16px 0;
     color: #1F314F;
     line-height: 120%;
+    letter-spacing: 0;
 }
 
 img {
