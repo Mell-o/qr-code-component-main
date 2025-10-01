@@ -11,9 +11,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -25,8 +23,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://mell-o.github.io/qr-code-component-main/)
+- Live Site URL: [Live site URL](https://mell-o.github.io/qr-code-component-main/)
 
 ## My process
 
@@ -59,9 +57,8 @@ Here’s how I implemented it with `clamp()` to keep it fluid but bounded:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to continue developing my eye for detail by challenging myself to recreate solutions that closely resemble the intended design before consulting the design files.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ## Author
 
