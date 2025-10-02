@@ -45,6 +45,7 @@ img {
 }
 
 .qr-code-container {
+    margin-block: 1rem;
     padding: 16px 16px 40px 16px;
     border-radius: 20px;
     width: 320px;
