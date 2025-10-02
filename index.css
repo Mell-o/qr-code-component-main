@@ -3,18 +3,18 @@
     --main-font-color: #68778D;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-size: 0.9375rem;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-block-start: clamp(3.75rem, 16vw, 14.406rem);
-    padding-block-end: clamp(3.75rem, 16vw, 14.406rem);
-    padding-inline-start: clamp(9.125rem, 39vw, 35rem);
-    padding-inline-end: clamp(9.125rem, 39vw, 35rem);
+    display: grid;
+    place-content: center;
+    min-height: 100dvh;
+    padding-inline: 1rem;
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
     line-height: 140%;
@@ -51,7 +51,6 @@ img {
     height: 499px;
     background-color: white;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .attribution {
