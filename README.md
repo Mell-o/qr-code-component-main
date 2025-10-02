@@ -36,11 +36,22 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I Learned
 
-One of the biggest takeaways from this project was understanding how to make layouts more responsive using `clamp()` and proportional scaling.
+Got it 👍 — here’s the updated polished version with that extra lesson about **avoiding overly high paddings** worked in:
 
-I learned that `clamp(min, preferred, max)` allows you to define a value that grows fluidly with the viewport (using units like `vw`) but never goes below a set minimum or above a maximum. This is especially useful for paddings, margins, and font sizes.
+---
 
-To calculate proportional scaling, I used the formula:
+### What I Learned
+
+One of the biggest takeaways from this project was learning how to use `clamp()` for responsive layouts — and also where it can backfire.
+
+`clamp(min, preferred, max)` is powerful because it lets values grow fluidly with the viewport (using units like `vw` or `vh`) but never shrink below a minimum or exceed a maximum. This makes it great for paddings, margins, and font sizes.
+
+Thanks to community feedback, I discovered that using `clamp()` on vertical paddings (`padding-top` / `padding-bottom`) can cause the page’s total height to **exceed the viewport**. On wider desktop screens, the preferred value can grow so large that the sum of top and bottom padding pushes the body taller than `100vh`, leading to unwanted vertical scroll bars. I also realized I had mistakenly used `vw` (viewport width) for vertical spacing when I should have been using `vh` (viewport height), which exaggerated the problem further.
+
+In addition to using the correct units, I also learned the importance of avoiding excessively large paddings in general — smaller, well-bounded values scale better and keep layouts from breaking across devices.
+
+To handle proportional scaling more safely, I used this formula:
+
 
 mobile padding = desktop padding × (mobile width ÷ desktop width)
 
@@ -49,17 +60,24 @@ For example, a top padding of `230.5px` at `1440px` scales down to about `60px` 
 Here’s how I implemented it with `clamp()` to keep it fluid but bounded:
 
 ```css
-  padding-top: clamp(60px, 16vw, 230.5px);
-  padding-bottom: clamp(60px, 16vw, 230.5px);
-  padding-left: clamp(146px, 39vw, 560px);
-  padding-right: clamp(146px, 39vw, 560px);
+padding-top: clamp(60px, 16vh, 230.5px);
+padding-bottom: clamp(60px, 16vh, 230.5px);
+padding-left: clamp(146px, 39vw, 560px);
+padding-right: clamp(146px, 39vw, 560px);
 ```
+
+This experience taught me that while `clamp()` is fantastic for responsive scaling, it’s critical to use the correct units, test carefully to avoid layouts taller than the viewport, and avoid relying on oversized paddings for spacing.
+
 
 ### Continued development
 
-I want to continue developing my eye for detail by challenging myself to recreate solutions that closely resemble the intended design before consulting the design files.
-
+I want to keep sharpening my eye for detail by challenging myself to recreate layouts and solutions as closely as possible to the intended design before consulting the design files. This will push me to rely more on observation and judgment, helping me catch subtle spacing, alignment, and scaling issues earlier and build more intuitive, design-accurate code.
 
 ## Author
 
 - Frontend Mentor - [@Mell-o](https://www.frontendmentor.io/profile/Mell-o)
+
+
+## Acknowledgements
+
+A special thanks to [@TisteEdur](https://www.frontendmentor.io/profile/TisteEdur) for pointing out the padding and unit issues that helped me identify why the layout was exceeding the viewport height.  
