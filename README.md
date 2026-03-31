@@ -36,12 +36,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I Learned
 
-Got it 👍 — here’s the updated polished version with that extra lesson about **avoiding overly high paddings** worked in:
-
----
-
-### What I Learned
-
 One of the biggest takeaways from this project was learning how to use `clamp()` for responsive layouts — and also where it can backfire.
 
 `clamp(min, preferred, max)` is powerful because it lets values grow fluidly with the viewport (using units like `vw` or `vh`) but never shrink below a minimum or exceed a maximum. This makes it great for paddings, margins, and font sizes.
